@@ -105,6 +105,7 @@ img {
 i.uil.uil-phone {
     color: #000;
 }
+
 /* NAVBAR */
 
 
@@ -241,6 +242,7 @@ header {
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
+
 /* 
 .category:nth-child(2) .category_icon {
     background: var(--color-danger);
@@ -263,7 +265,8 @@ header {
     padding: 0.7rem;
     border-radius: 0.9rem;
 }
-.category_icon img{
+
+.category_icon img {
     width: 70px;
     border-radius: 36px;
 }
@@ -294,8 +297,9 @@ header {
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
-    box-shadow:rgb(147 125 125 / 73%) 0px 5px 15px;
+    box-shadow: rgb(147 125 125 / 73%) 0px 5px 15px;
 }
+
 .course_image img {
     padding: 10px;
 }
@@ -321,7 +325,7 @@ header {
     padding: 2rem;
 }
 
-.course_info h4{
+.course_info h4 {
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     height: 24px;
@@ -329,6 +333,7 @@ header {
     text-overflow: ellipsis;
     display: -webkit-box;
 }
+
 .course_info p {
     margin: 1.2rem 0 2rem;
     font-size: 0.9rem;
@@ -340,10 +345,38 @@ header {
     display: -webkit-box;
 }
 
-.d-none{
+.d-none {
     display: none;
 }
 
+
+.privacy-page {
+    padding: 50px 0;
+    margin: 100px auto;
+}
+
+.privacy-page h3{
+    padding: 20px 0;
+}
+
+.privacy-page h1{
+    padding-bottom: 24px;
+}
+
+
+
+.termscondition {
+    padding: 50px 0;
+    margin: 100px auto;
+}
+
+.termscondition h3{
+    padding: 20px 0;
+}
+
+.termscondition h1{
+    padding-bottom: 24px;
+}
 /* FAQ'S */
 
 .faqs {
@@ -494,10 +527,11 @@ footer ul li:hover {
         width: 30%;
         margin-left: 0;
     }
+
     .category {
         width: auto;
     }
-    
+
 }
 
 
