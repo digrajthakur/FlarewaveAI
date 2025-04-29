@@ -38,6 +38,7 @@ a:hover {
 }
 
 .boxes h3 {
+    text-align: center;
     font-size: 23px;
     padding: 20px 0px;
 }
