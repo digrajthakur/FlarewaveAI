@@ -149,7 +149,7 @@
 
 
 /* MEDIA QUERIES (TABLETS) */
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1025px) {
     .about_achievements-left {
         margin: 100px 0;
         overflow: hidden;
