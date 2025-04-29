@@ -7,6 +7,7 @@
     height: 30rem;
     margin: 7rem auto;
     border-radius: 1rem;
+    position: relative;
 }
 
 
@@ -19,6 +20,7 @@
     position: relative;
     bottom: 7rem;
 }
+
 .aside_image img {
     border-radius: 9px;
 }
@@ -97,6 +99,14 @@ textarea {
     cursor: pointer;
 }
 
+div#responseMessage {
+    position: absolute;
+    bottom: 14px;
+    right: 7%;
+    color: #fff !important;
+    font-weight: 600;
+    font-size: large;
+}
 
 /* MEDIA QUERIES */
 
@@ -104,21 +114,29 @@ textarea {
     .contact {
         padding-bottom: 0;
     }
+
     .contact_container {
         gap: 1.5rem;
         margin-top: 3rem;
         height: auto;
         padding: 1.5rem;
     }
+
     .contact_aside {
         width: auto;
         padding: 1.5rem;
         bottom: 0;
     }
+
     .contact_form {
         align-self: center;
         margin-right: 1.5rem;
     }
+    div#responseMessage {
+        right: 5%;
+        font-size: 15px;
+    }
+    
 }
 
 
@@ -131,12 +149,15 @@ textarea {
         margin-top: 0;
         padding: 0;
     }
+
     .contact_form {
         margin: 0 1.5rem 3rem;
     }
+
     .form_name {
         flex-direction: column;
     }
+
     .form_name input[type="text"] {
         width: 100%;
     }
