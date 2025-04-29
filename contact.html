@@ -16,6 +16,8 @@
     <!-- CSS LINK -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <style>
         body {
             background-image: url("/image/Black-Abstract-HD-Wallpaper.jpg");
@@ -29,8 +31,7 @@
     <nav>
         <div class="container nav_container">
             <a href="index.html" class="logo">
-                <img src="/image/logo-white (1).png"
-                    alt="flarewaveAI">
+                <img src="/image/logo-white (1).png" alt="flarewaveAI">
                 <!-- <h4>Deepanshu College of <br> Professional Courses</h4> -->
             </a>
             <ul class="nav_menu">
@@ -95,7 +96,17 @@
                 </ul>
             </aside>
 
-            <form action="send.php" method="POST" class="contact_form">
+            <!-- <form action="send.php" method="POST" class="contact_form">
+                <div class="form_name">
+                    <input type="text" name="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" placeholder="Last Name" required>
+                </div>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <textarea name="message" rows="7" placeholder="Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form> -->
+
+            <form id="contactForm" class="contact_form">
                 <div class="form_name">
                     <input type="text" name="firstName" placeholder="First Name" required>
                     <input type="text" name="lastName" placeholder="Last Name" required>
@@ -104,6 +115,10 @@
                 <textarea name="message" rows="7" placeholder="Message" required></textarea>
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
+
+            <!-- Message Display Area -->
+            <div id="responseMessage" style="display:none; margin-top: 10px; color: green;"></div>
+
         </div>
     </section>
 
@@ -115,8 +130,7 @@
         <div class="container footer_container">
             <div class="footer_1">
                 <a href="index.html" class="footer_logo">
-                    <img src="/image/footer-logo.png"
-                        alt="logo">
+                    <img src="/image/footer-logo.png" alt="logo">
                 </a>
                 <p>
                     “Empower Your Future with FlareWaveAI”
@@ -136,8 +150,7 @@
             <div class="footer_3">
                 <h4>Privacy</h4>
                 <ul class="privacy">
-                    <li><a
-                            href="privacy-policy.html">Privacy
+                    <li><a href="privacy-policy.html">Privacy
                             Policy</a></li>
                     <li><a href="termscondition.html">Terms and Conditions</a>
                     </li>
@@ -173,8 +186,8 @@
             </div>
         </div>
         <div class="logo">
-            <a href="https://wa.me/919717655624" target="_blank"><img
-                    src="/image/whatsapp_icon.png" class="whatsapp" alt=""></a>
+            <a href="https://wa.me/919717655624" target="_blank"><img src="/image/whatsapp_icon.png" class="whatsapp"
+                    alt=""></a>
         </div>
         <div class="footer_copyright">
             <small>Copyright &copy; <a href="https://flarewaveai.com">flarewaveai.com</a></small>
@@ -188,6 +201,33 @@
     <!-- JS LINK -->
 
     <script src="app.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#contactForm').submit(function (e) {
+                e.preventDefault(); // Prevent form from submitting normally
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'send.php',
+                    data: $(this).serialize(),
+                    success: function (response) {
+                        $('#responseMessage').text(response).fadeIn();
+
+                        // Optionally reset the form
+                        $('#contactForm')[0].reset();
+
+                        // Hide the message after 5 seconds (optional)
+                        setTimeout(function () {
+                            $('#responseMessage').fadeOut();
+                        }, 5000);
+                    },
+                    error: function () {
+                        $('#responseMessage').text('Something went wrong. Please try again.').fadeIn();
+                    }
+                });
+            });
+        });
+    </script>
 
 
 </body>
