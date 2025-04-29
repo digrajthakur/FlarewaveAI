@@ -24,7 +24,7 @@ $stmt->bind_param("ssss", $firstName, $lastName, $email, $message);
 
 
 if ($stmt->execute()) {
-    echo "Thank you! Your message has been submitted.";
+    echo "Thank you for reaching out! Your message has been successfully submitted. Our team will get back to you shortly.";
 } else {
     http_response_code(500);
     echo "Error saving your message.";
