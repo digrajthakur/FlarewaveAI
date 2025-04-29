@@ -147,7 +147,7 @@ textarea {
     position: relative;
     z-index: 10000;
     background: #fff;
-    padding: 30px;
+    padding: 50px;
     max-width: 400px;
     margin: 15% auto;
     text-align: center;
@@ -159,6 +159,7 @@ textarea {
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
+    color: #000;
 }
 
 .popup-box button {
