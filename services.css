@@ -62,7 +62,7 @@ a:hover {
         margin-top: 100% !important;
     }
     .about-us-info {
-        height: 54%;
+        height: 50% !important;
     }
 }
 

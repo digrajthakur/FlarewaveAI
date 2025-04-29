@@ -141,6 +141,14 @@ nav button {
     align-items: center;
     /* gap: 4rem; */
 }
+.nav_menu li:nth-child(6) a{
+width: 180px;
+display: block;
+}
+
+.nav_menu li:nth-child(6) a i.uil.uil-phone {
+    color: #fff;
+}
 
 .nav_menu a {
     font-size: 0.9rem;
@@ -759,8 +767,8 @@ footer ul li:hover {
     }
 } */
 
-@media screen and (min-width:1100px) {
+/* @media screen and (min-width:1100px) {
     .nav_menu li:nth-child(5) {
         width: 150px;
     }
-}
+} */
