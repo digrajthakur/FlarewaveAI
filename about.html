@@ -28,8 +28,7 @@
     <nav>
         <div class="container nav_container">
             <a href="index.html" class="logo">
-                <img src="/image/logo-white (1).png"
-                    alt="flarewaveAI">
+                <img src="/image/logo-white (1).png" alt="flarewaveAI">
                 <!-- <h4>Deepanshu College of <br> Professional Courses</h4> -->
             </a>
             <ul class="nav_menu">
@@ -62,7 +61,7 @@
 
     <section class="about_achievements">
         <div class="container about_achievements-container">
-            <div class="about_achievements-left">
+            <div class="about_achievements-left scroll-animation">
                 <img src="image/about-banner.jpg" alt="">
             </div>
             <div class="about_achievements-right">
@@ -279,8 +278,7 @@
         <div class="container footer_container">
             <div class="footer_1">
                 <a href="index.html" class="footer_logo">
-                    <img src="/image/footer-logo.png"
-                        alt="logo">
+                    <img src="/image/footer-logo.png" alt="logo">
                 </a>
                 <p>
                     “Empower Your Future with FlareWaveAI”
@@ -300,8 +298,7 @@
             <div class="footer_3">
                 <h4>Privacy</h4>
                 <ul class="privacy">
-                    <li><a
-                            href="privacy-policy.html">Privacy
+                    <li><a href="privacy-policy.html">Privacy
                             Policy</a></li>
                     <li><a href="termscondition.html">Terms and Conditions</a>
                     </li>
@@ -317,28 +314,24 @@
                 <div>
                     <ul class="footer_socials">
                         <li>
-                            <a
-                                href="https://x.com/@flarewaveai"><i
-                                    class="uil uil-twitter"></i></a>
+                            <a href="https://x.com/@flarewaveai"><i class="uil uil-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/flarewaveai/"><i
-                                    class="uil uil-instagram-alt"></i></a>
+                            <a href="https://www.instagram.com/flarewaveai/"><i class="uil uil-instagram-alt"></i></a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com/@AIFlarewave"><i class="uil uil-youtube"></i></a>
                         </li>
                         <li>
-                            <a href="www.linkedin.com/in/flarewaveai"><i
-                                    class="uil uil-linkedin-alt"></i></a>
+                            <a href="www.linkedin.com/in/flarewaveai"><i class="uil uil-linkedin-alt"></i></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="logo">
-            <a href="https://wa.me/919717710928" target="_blank"><img
-                    src="/image/whatsapp_icon.png" class="whatsapp" alt=""></a>
+            <a href="https://wa.me/919717710928" target="_blank"><img src="/image/whatsapp_icon.png" class="whatsapp"
+                    alt=""></a>
         </div>
         <div class="footer_copyright">
             <small>Copyright &copy; <a href="https://flarewaveai.com">flarewaveai.com</a></small>
@@ -347,8 +340,28 @@
     </footer>
 
 
+    <script src="https://cdn.shopify.com/s/files/1/0822/8395/4520/files/gsap.min.js?v=1724934402"></script>
+    <script src="https://cdn.shopify.com/s/files/1/0822/8395/4520/files/ScrollTrigger.min.js?v=1724934401"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            gsap.registerPlugin(ScrollTrigger);
 
+            const images = document.querySelectorAll(".scroll-animation img");
 
+            images.forEach(img => {
+                gsap.to(img, {
+                    scale: 1.3,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: img,
+                        start: "top bottom",
+                        end: "bottom top",
+                        scrub: true
+                    }
+                });
+            });
+        });
+    </script>
     <!-- JS LINK -->
 
     <script src="app.js"></script>
