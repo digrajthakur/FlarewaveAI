@@ -149,6 +149,23 @@
 
 
 /* MEDIA QUERIES (TABLETS) */
+@media screen and (min-width:1024px) {
+    .about_achievements-left {
+        margin: 100px 0;
+        overflow: hidden;
+    }
+
+    .about_achievements-left img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transform-origin: center center;
+    }
+    .d-block{
+        display: none;
+    }
+
+}
 
 @media screen and (max-width:1024px) {
     .about_achievements {
@@ -172,6 +189,9 @@
 
     .team_member {
         padding: 1rem;
+    }
+    .about_achievements-left.scroll-animation{
+        display: none;
     }
 }
 
@@ -197,10 +217,10 @@
         margin-bottom: 1.5rem;
     }
 
-   
+
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
     .about-section {
         flex-direction: column;
         gap: 40px;
