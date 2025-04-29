@@ -141,9 +141,10 @@ nav button {
     align-items: center;
     /* gap: 4rem; */
 }
-.nav_menu li:nth-child(6) a{
-width: 180px;
-display: block;
+
+.nav_menu li:nth-child(6) a {
+    width: 180px;
+    display: block;
 }
 
 .nav_menu li:nth-child(6) a i.uil.uil-phone {
@@ -196,7 +197,9 @@ header {
 .header_right img {
     border-radius: 24px;
 }
-
+.header_right{
+    display: none;
+}
 .swiper-pagination-bullet {
     background: #fff !important;
 }
@@ -363,11 +366,11 @@ header {
     margin: 100px auto;
 }
 
-.privacy-page h3{
+.privacy-page h3 {
     padding: 20px 0;
 }
 
-.privacy-page h1{
+.privacy-page h1 {
     padding-bottom: 24px;
 }
 
@@ -378,13 +381,14 @@ header {
     margin: 100px auto;
 }
 
-.termscondition h3{
+.termscondition h3 {
     padding: 20px 0;
 }
 
-.termscondition h1{
+.termscondition h1 {
     padding-bottom: 24px;
 }
+
 /* FAQ'S */
 
 .faqs {
@@ -529,6 +533,27 @@ footer ul li:hover {
 }
 
 
+.video {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    place-items: anchor-center;
+    justify-self: anchor-center;
+    align-self: center;
+    bottom: 0;
+}
+
 /* Media Queries */
 @media screen and (max-width:768px) {
     a.logo img {
@@ -540,9 +565,35 @@ footer ul li:hover {
         width: auto;
     }
 
+    .video {
+        height: -webkit-fill-available;
+        object-fit: fill;
+    }
 }
 
 
+/* @media screen and (min-width:1024px) {
+    .video {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .header_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 5rem;
+        height: 100%;
+        position: absolute;
+        margin: auto;
+        place-items: anchor-center;
+        justify-self: anchor-center;
+        align-self: center;
+        bottom: 0;
+    }
+} */
 
 @media screen and (max-width:1024px) {
     .container {
