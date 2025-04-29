@@ -83,8 +83,8 @@ img {
 
 .btn {
     display: inline-block;
-    background: var(--color-white);
-    color: var(--color-black);
+    background: #006f99;
+    color: #fff;
     padding: 1rem 2rem;
     border: 1px solid transparent;
     font-weight: 500;
