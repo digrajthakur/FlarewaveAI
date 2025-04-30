@@ -571,9 +571,22 @@ footer ul li:hover {
         height: -webkit-fill-available;
         object-fit: fill;
     }
+
+    .footer_logo img {
+        width: 50%;
+        margin: auto;
+    }
+    .g-recaptcha {
+        width: 24px !important;
+        max-width: 40px !important;
+    }
 }
 
-
+@media screen and (max-width:630px){
+    iframe {
+        width: 250px !important;
+    }
+}
 /* @media screen and (min-width:1024px) {
     .video {
         position: relative;
