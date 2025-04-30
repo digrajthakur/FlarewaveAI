@@ -586,6 +586,9 @@ footer ul li:hover {
     iframe {
         width: 250px !important;
     }
+    .g-recaptcha div:nth-child(1) {
+        width: auto !important;
+    }    
 }
 /* @media screen and (min-width:1024px) {
     .video {
