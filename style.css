@@ -197,9 +197,11 @@ header {
 .header_right img {
     border-radius: 24px;
 }
-.header_right{
+
+.header_right {
     display: none;
 }
+
 .swiper-pagination-bullet {
     background: #fff !important;
 }
@@ -594,6 +596,12 @@ footer ul li:hover {
         bottom: 0;
     }
 } */
+
+@media screen and (max-width:1024px) {
+    .contact_container {
+        height: 33rem;
+    }
+}
 
 @media screen and (max-width:1024px) {
     .container {
