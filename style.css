@@ -556,6 +556,11 @@ footer ul li:hover {
     bottom: 0;
 }
 
+.ai-video {
+    padding-top: 0 !important;
+    padding-bottom: 10px;
+}
+
 /* Media Queries */
 @media screen and (max-width:768px) {
     a.logo img {
@@ -576,20 +581,23 @@ footer ul li:hover {
         width: 50%;
         margin: auto;
     }
+
     .g-recaptcha {
         width: 24px !important;
         max-width: 40px !important;
     }
 }
 
-@media screen and (max-width:630px){
+@media screen and (max-width:630px) {
     iframe {
         width: 250px !important;
     }
+
     .g-recaptcha div:nth-child(1) {
         width: auto !important;
-    }    
+    }
 }
+
 /* @media screen and (min-width:1024px) {
     .video {
         position: relative;
