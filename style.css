@@ -557,7 +557,7 @@ footer ul li:hover {
 }
 
 .ai-video {
-    padding-top: 0 !important;
+    padding-top: 0;
     padding-bottom: 10px;
 }
 
@@ -767,6 +767,9 @@ footer ul li:hover {
     /* Footer */
     .footer_container {
         grid-template-columns: 1fr 1fr;
+    }
+    .ai-video {
+        padding-top: 80px !important;
     }
 }
 
