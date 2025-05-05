@@ -569,7 +569,7 @@ footer ul li:hover {
 }
 
 .ai-video {
-    padding-top: 0;
+    padding-top: 75px;
     padding-bottom: 10px;
 }
 
@@ -582,7 +582,7 @@ footer ul li:hover {
     .nav_menu li:nth-child(6) a {
         width: auto;
     }
-    
+
     .category {
         width: auto;
     }
