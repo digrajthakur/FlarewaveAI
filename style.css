@@ -591,6 +591,9 @@ footer ul li:hover {
         height: -webkit-fill-available;
         object-fit: fill;
     }
+    .ai-videos{
+        height: 50vh;
+    }
 
     .footer_logo img {
         width: 50%;
