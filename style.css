@@ -579,6 +579,7 @@ footer ul li:hover {
         width: 30%;
         margin-left: 0;
     }
+
     .nav_menu li:nth-child(6) a {
         width: auto;
     }
@@ -591,9 +592,14 @@ footer ul li:hover {
         height: -webkit-fill-available;
         object-fit: fill;
     }
-    .ai-videos{
-        height: 50vh;
+
+    .ai-video img {
+        height: 60vh;
     }
+
+    /* .ai-videos{
+        height: 50vh;
+    } */
 
     .footer_logo img {
         width: 50%;
@@ -786,6 +792,7 @@ footer ul li:hover {
     .footer_container {
         grid-template-columns: 1fr 1fr;
     }
+
     .ai-video {
         padding-top: 80px !important;
     }
