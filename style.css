@@ -21,7 +21,7 @@
     --color-bg1: #00a3e0;
     --color-bg2: #006f99; */
     --color-primary: #18759b;
-    --color-success: #00bf8c;
+    --color-success: #18759b;
     --color-warning: #f7c94b;
     --color-danger: #18759b;
     --color-danger-variant: #rgba(247, 88, , 66, 0.4);
@@ -338,7 +338,7 @@ header {
     position: relative;
     right: auto;
     margin-top: 60px;
-    border-radius: 12px;
+
 }
 
 .course:hover {
@@ -579,7 +579,10 @@ footer ul li:hover {
         width: 30%;
         margin-left: 0;
     }
-
+    .nav_menu li:nth-child(6) a {
+        width: auto;
+    }
+    
     .category {
         width: auto;
     }

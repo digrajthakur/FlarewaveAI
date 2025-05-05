@@ -254,7 +254,7 @@ a:hover {
 
 @media screen and (max-width:768px) {
     .boxes {
-        width: 46%;
+        width: 100%;
     }
 
     .boxes h3 {
